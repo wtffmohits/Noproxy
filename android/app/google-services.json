@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "211048511322",
+    "project_id": "no-more-proxy-269a8",
+    "storage_bucket": "no-more-proxy-269a8.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:211048511322:android:4d97da42026acd38526563",
+        "android_client_info": {
+          "package_name": "com.example.noproxy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyZohNsZyh24NqAAeDrgtG4acFDOu46Y4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
