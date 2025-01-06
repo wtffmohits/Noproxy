@@ -5,6 +5,7 @@ import 'package:noproxy/screens/Student_screen/Activity_page.dart';
 import 'package:noproxy/screens/Student_screen/Attendance_screen.dart';
 import 'package:noproxy/screens/Student_screen/Profile_screen.dart';
 import 'package:noproxy/screens/Student_screen/home_screen.dart';
+import 'package:noproxy/screens/teachers_screens/schedule.dart';
 
 class NavigationMenuet extends StatelessWidget {
   const NavigationMenuet({super.key});
@@ -66,9 +67,7 @@ class NavigationController extends GetxController {
   final screens = [
     const HomePage(),
     const QrScanScreen(),
-    const Activitys(
-      attendanceData: [],
-    ),
+    const Scheduling(),
     const ProfileScreen(),
   ];
 }
