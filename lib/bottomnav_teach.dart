@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:noproxy/screens/Student_screen/Activity_page.dart';
 import 'package:noproxy/screens/Student_screen/Attendance_screen.dart';
 import 'package:noproxy/screens/Student_screen/Profile_screen.dart';
 import 'package:noproxy/screens/Student_screen/home_screen.dart';

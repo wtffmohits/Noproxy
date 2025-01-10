@@ -1,28 +1,31 @@
 import 'package:flutter/material.dart';
+import 'package:noproxy/widgets/Themes/color.dart';
 
 class BlueButton extends StatelessWidget {
-  final String text;
+  final String lable;
+  final Function()? onTap;
+
   final VoidCallback? onPressed;
 
-  const BlueButton({Key? key, required this.text, this.onPressed})
-      : super(key: key);
+  const BlueButton(
+      {super.key, required this.lable, this.onPressed, this.onTap});
 
   @override
   Widget build(BuildContext context) {
-    return ElevatedButton(
-      onPressed: onPressed,
-      style: ElevatedButton.styleFrom(
-        foregroundColor: Colors.white,
-        backgroundColor: Colors.blue, // Set text color to white
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(8.0), // Customize border radius
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        width: 120,
+        height: 60,
+        padding: const EdgeInsets.symmetric(vertical: 15),
+        alignment: Alignment.center,
+        decoration: BoxDecoration(
+          color: TColors.primaryColor,
+          borderRadius: BorderRadius.circular(15),
         ),
-      ),
-      child: Text(
-        text,
-        style: const TextStyle(
-          fontSize: 16.0,
-          fontWeight: FontWeight.bold,
+        child: Text(
+          lable,
+          style: const TextStyle(color: Colors.white, fontSize: 18),
         ),
       ),
     );

@@ -1,12 +1,14 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:noproxy/components/controller/Db/Db_helper.dart';
 import 'package:noproxy/firebase_options.dart';
 import 'package:noproxy/main.dart';
 import 'package:noproxy/screens/onbording/onbording_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await DbHelper.initDb();
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
